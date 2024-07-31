@@ -1,0 +1,78 @@
+.card-container {
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 2px solid #d1d5db;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    max-width: 16rem;
+  }
+}
+
+.card-image-container {
+  position: relative;
+  height: 18rem;
+  background-color: #cbd5e1;
+}
+
+.card-image {
+  width: 100%;
+  height: 18rem;
+  object-fit: contain;
+  padding: 0.75rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card-info {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  color: #1f2937;
+}
+
+.card-info .text-light {
+  color: #7a7b7e;
+}
+
+.card-details {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  height: 7rem;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.card-title .text-xs {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 100;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

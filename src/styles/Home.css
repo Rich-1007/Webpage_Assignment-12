@@ -1,0 +1,129 @@
+.home-container {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #e2e8f0;
+}
+
+.home-top-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.home-search-filter-container {
+  display: flex;
+  flex-direction: row;
+  width: 66.66%;
+  justify-content: space-between;
+}
+
+.home-search-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  width: 83.33%;
+  height: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  gap: 16px;
+}
+
+.home-search-icon {
+  cursor: pointer;
+  color: gray;
+}
+
+.home-search-input {
+  width: 83.33%;
+  height: 100%;
+  outline: none;
+}
+
+.home-filter-button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #e2e8f0;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  gap: 4px;
+}
+
+.home-filter-icon {
+  height: 16px;
+}
+
+.home-filter-text {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .home-filter-text {
+    display: block;
+  }
+}
+
+.home-surprise-me-button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #f97316;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-surprise-me-icon {
+  transform: rotate(180deg);
+}
+
+.home-surprise-me-text {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .home-surprise-me-text {
+    display: block;
+  }
+}
+
+.home-view-toggle {
+  display: flex;
+  gap: 4px;
+  flex-direction: row;
+  padding-top: 40px;
+}
+
+.home-toggle-icon-container {
+  cursor: pointer;
+  width: fit-content;
+  border-radius: 8px;
+  border: 2px solid #d1d5db;
+  height: fit-content;
+}
+
+.home-toggle-icon {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.home-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  padding-top: 20px;
+  gap: 16px;
+}
